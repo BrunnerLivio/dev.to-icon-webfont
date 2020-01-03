@@ -1,20 +1,24 @@
 {
-  "name": "my-icons-pack",
-  "version": "1.0.0",
+  "name": "@brunnerlivio/my-icons-pack",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm run icons:compress && npm run icons:font",
     "icons:compress": "svgo svg/*.svg -o svg --config config.yml",
-    "icons:font": "icon-font-generator svg/*.svg -o font/ --name \"my-icon-font\" --height 100"
+    "icons:font": "icon-font-generator svg/*.svg -o font/ --name \"my-icon-font\" --height 100",
+    "semantic-release": "semantic-release"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "icon-font-generator": "^2.1.10"
-  },
   "devDependencies": {
-    "svgo": "^1.3.2"
+    "icon-font-generator": "^2.1.10",
+    "svgo": "^1.3.2",
+    "semantic-release": "^15.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrunnerLivio/dev.to-icon-webfont.git"
   }
 }
