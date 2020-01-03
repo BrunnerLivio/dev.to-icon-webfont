@@ -3,6 +3,9 @@
   "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npm run icons:compress && npm run icons:font",
     "icons:compress": "svgo svg/*.svg -o svg --config config.yml",
